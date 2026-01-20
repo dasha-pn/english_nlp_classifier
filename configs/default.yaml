@@ -1,0 +1,15 @@
+seed: 42
+model_name: distilbert-base-uncased
+max_len: 32
+batch_size: 64
+lr: 2e-5
+epochs: 1
+weight_decay: 0.01
+warmup_ratio: 0.1
+num_workers: 0
+use_title_and_desc: true
+
+paths:
+  train_csv: data/train.csv
+  test_csv: data/test.csv
+  out_dir: models/checkpoints
